@@ -183,6 +183,15 @@ public class PlayerController : MonoBehaviour
             // Eliminar la gema recogida
             Destroy(collision.gameObject);
         }
-    }
+   
 
+        //  Detectar cuando el jugador toca un enemigo
+        else if (collision.CompareTag("Enemy"))
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene(
+         UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex
+     );
+
+        }
+    }
 }
