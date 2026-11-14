@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour
 
     // Variables para controlar la aparición de la Super Gema Legendaria
     public GameObject superGemaLegendaria;
-    private int totalGemasNormales = 10;
+    private int totalGemasNormales = 13;
 
     void Start()
     {
